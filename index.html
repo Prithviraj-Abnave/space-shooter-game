@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Space Shooter — Simple AI Enemies</title>
+  <style>
+    html,body{height:100%;margin:0;background:#000;color:#fff;font-family:system-ui,Segoe UI,Roboto}
+    #game{display:block;margin:0 auto;background:#001;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+    #ui{width:640px;margin:12px auto;text-align:center}
+    .hint{font-size:13px;opacity:.8}
+  </style>
+</head>
+<body>
+  <canvas id="game" width="640" height="480"></canvas>
+  <div id="ui">
+    <div class="hint">Arrows/WASD to move • Space to shoot • Enemy AI: patrol → chase → evade</div>
+  </div>
+
+  <!-- Link external JavaScript file -->
+  <script src="game.js"></script>
+</body>
+</html>
