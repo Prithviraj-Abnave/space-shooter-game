@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Space Shooter — Simple AI Enemies</title>
+  <title>Space Shooter — Galaxy Depth</title>
   <style>
-    html,body{height:100%;margin:0;background:#000;color:#fff;font-family:system-ui,Segoe UI,Roboto}
-    #game{display:block;margin:0 auto;background:#001;box-shadow:0 10px 30px rgba(0,0,0,.6)}
-    #ui{width:640px;margin:12px auto;text-align:center}
-    .hint{font-size:13px;opacity:.8}
+    html,body{height:100%;margin:0;background:#000;color:#fff;font-family:system-ui,Segoe UI,Roboto,Arial}
+    #game{display:block;margin:0 auto;background:#000;box-shadow:0 10px 40px rgba(0,0,0,.7);border-radius:6px}
+    #ui{width:640px;margin:12px auto;text-align:center;user-select:none}
+    .hint{font-size:13px;opacity:.85}
+    .hint b{color:#8fd3ff}
   </style>
 </head>
 <body>
   <canvas id="game" width="640" height="480"></canvas>
   <div id="ui">
-    <div class="hint">Arrows/WASD to move • Space to shoot • Enemy AI: patrol → chase → evade</div>
+    <div class="hint">
+      Arrows/WASD to move • Space to shoot • <b>P</b> pause • <b>R</b> restart • <b>m</b> toggle SFX • <b>Shift+M</b> or <b>B</b> toggle ambient music
+    </div>
   </div>
 
-  <!-- Link external JavaScript file -->
+  <!-- main game script -->
   <script src="game.js"></script>
 </body>
 </html>
